@@ -8,8 +8,12 @@ import { Nearbyjobs, Popularjobs, ScreenHeaderBtn, Welcome } from '../components
 const Home = () => {
     const router = useRouter()
     return (
-        <SafeAreaView>
-            <Text>Home</Text>
+        <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite}}>
+            <Stack.Screen 
+                options={{
+                    headerStyle: {backgroundColor: COLORS.lightWhite },
+                }}
+            />
         </SafeAreaView>
     )
 }
