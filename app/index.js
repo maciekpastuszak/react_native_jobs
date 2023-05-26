@@ -12,6 +12,13 @@ const Home = () => {
             <Stack.Screen 
                 options={{
                     headerStyle: {backgroundColor: COLORS.lightWhite },
+                    headerShadowVisible: false,
+                    headerLeft: () => (
+                        <ScreenHeaderBtn iconUrl={icons.menu} dimensions="60%" />
+                    ),
+                    headerRight: () => (
+                        <ScreenHeaderBtn iconUrl={icons.profile} dimensions="100%" />
+                    ),
                 }}
             />
         </SafeAreaView>
