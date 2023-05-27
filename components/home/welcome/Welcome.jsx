@@ -3,7 +3,9 @@ import { View, Text, TextInput, TouchableOpacity, Image, FlatList } from 'react-
 import { useRouter } from 'expo-router';
 
 import styles from './welcome.style';
-import { icons, SIZES } from '../../../constants'
+import { icons, SIZES } from '../../../constants';
+
+const jobTypes = ["Full-time", "Part-time", "Contractor"]
 
 const Welcome = () => {
   const router = useRouter();
@@ -31,6 +33,17 @@ const Welcome = () => {
             style={styles.searchBtnImage}
           />
         </TouchableOpacity>
+      </View>
+
+      <View style={styles.tabsContainer}>
+        <Flatlist 
+          data={jobTypes}
+          renderItem={({ item }) => (
+            <TouchableOpacity>
+              <Text>{item}</Text>
+            </TouchableOpacity>
+          )}
+        />
       </View>
     </View>
   )
