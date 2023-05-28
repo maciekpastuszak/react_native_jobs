@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { View, Text, ToouchableOpacity, Flatlist, ActivityIndicator } from 'react-native'
+import { View, Text, TouchableOpacity, Flatlist, ActivityIndicator } from 'react-native'
 import { useRouter } from 'expo-router';
 import styles from './popularjobs.style';
 import { COLORS, SIZES } from '../../../constants';
@@ -12,6 +12,9 @@ const router = useRouter();
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Popular jobs</Text>
+        <TouchableOpacity>
+          <Text style={styles.headerBtn}>Show all</Text>
+        </TouchableOpacity>
       </View>
     </View>
   )
