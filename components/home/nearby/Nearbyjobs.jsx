@@ -32,7 +32,9 @@ const Nearbyjobs = () => {
         ) : (
           data?.map((job) => (
             <NearbyJobCard 
-            
+              jpb={job}
+              key={`nearby-job-${job?.job_id}`}
+              handleNavigate={() => router.puch(`/job-details/${job.job_id}`)}
             />
           ))
         )}
