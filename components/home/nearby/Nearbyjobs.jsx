@@ -30,17 +30,11 @@ const Nearbyjobs = () => {
         ) : error ? (
           <Text>Something went wrong</Text>
         ) : (
-          <FlatList 
-            data={data}
-            renderItem={({item}) => (
-              <PopularJobCard 
-                item={item}
-              />
-            )}
-            keyExtractor={item => item?.job_id}
-            contentContainerStyle={{ columnGap: SIZES.medium}}
-            horizontal
-          />
+          data?.map((job) => (
+            <NearbyJobCard 
+            
+            />
+          ))
         )}
       </View>
     </View>
