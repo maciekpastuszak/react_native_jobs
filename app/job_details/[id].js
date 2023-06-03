@@ -17,7 +17,7 @@ const JobDetails = () => {
     })
 
     const [refreshing, setRefreshing] = useState(false);
-    const [activeTab, setactiveTab] = useState(tabs[0]);
+    const [activeTab, setActiveTab] = useState(tabs[0]);
 
     const onRefresh = () => {}
 
