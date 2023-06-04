@@ -21,6 +21,17 @@ const JobDetails = () => {
 
     const onRefresh = () => {}
 
+    const  displayTabContent = () => {
+      switch (activeTab) {
+        case "Qualifications":
+        case "About":
+        case "Responsibilities":
+          default:
+            breakl
+
+      }
+    }
+
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
         <Stack.Screen
