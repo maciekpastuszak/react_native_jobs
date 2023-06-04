@@ -37,8 +37,8 @@ const JobDetails = () => {
           title="Responsibilities"
           points={data[0].job_highlights?.Responsibilities ?? ['N/A']}
           />
-          default:
-            breakl
+        default:
+          breakl
 
       }
     }
@@ -96,6 +96,8 @@ const JobDetails = () => {
             </View>
           )}
             </ScrollView>
+
+            <JobFooter url={data[0]?.job_ggogle_link ?? 'https://careers.google.com/jobs/results'}/>
         </>
     </SafeAreaView>
   )
