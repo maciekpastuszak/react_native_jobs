@@ -4,9 +4,12 @@ import { Stack, useRouter, useSearchParams } from 'expo-router'
 import { Text, SafeAreaView } from 'react-native'
 import axios from 'axios'
 
+import { RAPID_API_KEY } from '@env';
 import { ScreenHeaderBtn, NearbyJobCard } from '../../components'
 import { COLORS, icons, SIZES } from '../../constants'
 import styles from '../../styles/search'
+
+const rapidApiKey = RAPID_API_KEY;
 
 const JobSearch = () => {
     const params = useSearchParams();
@@ -26,7 +29,7 @@ const JobSearch = () => {
                 method: "GET",
                 url: `https://jsearch.p.rapidapi.com/search`,
                 headers: {
-                    "X-RapidAPI-Key": '',
+                    "X-RapidAPI-Key": rapidApiKey,
                     "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
                 },
                 params: {
