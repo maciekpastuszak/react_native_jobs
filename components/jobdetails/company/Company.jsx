@@ -5,8 +5,6 @@ import styles from "./company.style";
 import { icons } from "../../../constants";
 import { checkImageURL } from "../../../utils";
 
-import styles from './company.style'
-
 const Company = ({ companyLogo, jobTitle, companyName, location }) => {
   return (
     <View style={styles.container}>
