@@ -5,4 +5,4 @@ This is a react native app, that allows to search for job position across popula
 
 ### [Live Site](https://expo.dev/@paciekfly/react_native_jobs?serviceType=classic&distribution=expo-go)
 
-![React Native Jobs](https://i.ibb.co/rxYr8Wp/react-native-app.png)
+![React Native Jobs](https://i.ibb.co/TT0WYkX/react-native-app.png)
